@@ -1,0 +1,35 @@
+<div class="wrapper">
+  <div class="container">
+    <div class="col-left">
+      <div class="login-text">
+        <h2>Logo</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget eros
+          dapibus, ultricies tellus vitae, consectetur tortor. Etiam rutrum
+          placerat
+        </p>
+      </div>
+    </div>
+    <div class="col-right">
+      <div class="login-form" [formGroup]="form">
+        <h2> {{'Login' | translate}}</h2>
+        <p>
+          <input type="text" formControlName="mobile" placeholder=" {{'PhoneNumber' | translate}}" required />
+        </p>
+        <p>
+          <input type="password" formControlName="password" placeholder=" {{'password' | translate}}" required />
+        </p>
+        <p>
+          <input class="btn" (click)="submit()" type="submit" value="Sing In" />
+        </p>
+        <p>
+          <a routerLink="/accounts/CreateAccount"> {{'CreateAnAccount' | translate}}</a>
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="credit">
+    <!-- Designed by <a href="https://htmlcodex.com">HTML Codex</a> -->
+  </div>
+</div>
+
